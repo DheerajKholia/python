@@ -1,0 +1,16 @@
+#start mongodb cli
+./bin/mongosh
+
+#Login to mongodb
+use admin
+db.auth("mongoadmin","mongopasswd");
+
+#List Databases
+show dbs
+use mongotestDB
+
+#List Collections
+db.getCollectionInfos()
+
+#Query collection
+db.my_test_record.find()
